@@ -19,19 +19,25 @@ android {
     }
 
     productFlavors {
-//        main{
-//            applicationId "com.simon.a"
-//        }
+        main {
+            applicationId "com.simon.a"
+            buildConfigField 'String', 'OEM', 'simon'
+        }
 
         publicVersion {
             applicationId "com.york.pub"
+            buildConfigField 'String', 'OEM', 'jack'
         }
-//        customVersion {
-//            applicationId "com.york.custom"
-//        }
-//        TestVersion {
-//            applicationId 'com.york.test'
-//        }
+
+        customVersion {
+            applicationId "com.york.custom"
+            buildConfigField 'String', 'OEM', 'tom'
+        }
+
+        TestVersion {
+            applicationId 'com.york.test'
+            buildConfigField 'String', 'OEM', 'helen'
+        }
     }
 
 }

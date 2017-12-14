@@ -8,7 +8,7 @@ android {
     buildToolsVersion "26.0.0"
 
     defaultConfig {
-        applicationId "com.simon.kotlin"
+        applicationId "com.kotlin"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
@@ -42,9 +42,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:design:25.3.1'
     compile files('libs/commons-lang3-3.6.jar')
-    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.0.2'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     //kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
@@ -63,4 +63,6 @@ dependencies {
     //    compile(name: 'commonlib-debug', ext: 'aar')
     compile project(':commonlib')
     compile 'com.google.android.gms:play-services-ads:11.6.2'
+    //摇一摇问题反馈
+    compile 'com.maizijf.feedback:feedback:0.1.6'
 }

@@ -29,8 +29,8 @@
             <!--<activity android:name=".retrofitdemo.RetrofitAct">-->
             <!--<activity android:name=".okhttp.OkHttpAct">-->
             <!--<activity android:name=".JSHtml.JSAct">-->
-            <!--<activity android:name=".uiview.UIViewTest">-->
-            <activity android:name=".smalisign.SignChangeAct">
+            <activity android:name=".uiview.UIViewTest">
+            <!--<activity android:name=".smalisign.SignChangeAct">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

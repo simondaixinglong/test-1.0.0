@@ -27,6 +27,8 @@ allprojects {
             url 'https://maven.google.com/'
             name 'Google'
         }
+
+        maven { url 'http://192.168.32.221:8081/nexus/content/repositories/releases/' }
     }
 }
 
