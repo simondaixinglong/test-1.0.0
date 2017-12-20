@@ -32,4 +32,18 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+    <!-- indicator -->
+    <declare-styleable name="FlowIndicator">
+        <!-- count：圆钮的数量 -->
+        <attr name="count" format="integer" />
+        <!-- radius：圆钮的半径 -->
+        <attr name="radiu" format="dimension" />
+        <!-- space：圆钮的的间距 -->
+        <attr name="space" format="dimension" />
+        <!-- normal_color： 圆钮缺省颜色 -->
+        <attr name="normal_color" format="color|reference" />
+        <!-- focus_color：圆钮焦点颜色 -->
+        <attr name="focus_color" format="color|reference" />
+    </declare-styleable>
+
 </resources>

@@ -62,6 +62,7 @@ public class JSHtmlAct extends AppCompatActivity {
 
         showWeb.setWebViewClient(webViewClient);
         showWeb.loadUrl("http://192.168.44.226:3001/view/settixianmima.html");
+//        showWeb.loadUrl("https://pdfobject.com/examples/pdfjs-forced.html");
 
     }
 

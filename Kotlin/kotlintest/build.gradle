@@ -14,6 +14,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -35,12 +36,28 @@ android {
             dirs 'libs'
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    dexOptions {
+        //去掉会报 value为3
+        javaMaxHeapSize "4g"
+        incremental false
+        preDexLibraries = false
+        jumboMode = true
+    }
 }
 
 dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    compile "com.android.support:multidex:1.0.1" // 多dex配置
+
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:design:25.3.1'
     compile files('libs/commons-lang3-3.6.jar')
@@ -64,5 +81,5 @@ dependencies {
     compile project(':commonlib')
     compile 'com.google.android.gms:play-services-ads:11.6.2'
     //摇一摇问题反馈
-    compile 'com.maizijf.feedback:feedback:0.1.6'
+//    compile 'com.maizijf.feedback:feedback:0.1.6'
 }
