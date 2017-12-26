@@ -10,12 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="200dp">
 
-        <com.simon.widget.ShowView
+        <com.simon.widget.slideView.ShowView
             android:id="@+id/showView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <com.simon.widget.FlowIndicator
+        <com.simon.widget.slideView.FlowIndicator
             android:id="@+id/indicatorView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,6 +25,24 @@
             android:layout_marginRight="5dp" />
 
     </RelativeLayout>
+
+
+    <com.simon.widget.LargeImageView
+        android:id="@+id/showLarge"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/tvHtml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvHtml1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

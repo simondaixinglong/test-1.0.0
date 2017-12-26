@@ -2,6 +2,7 @@ package com.simon.smalisign
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.text.Html
 import com.simon.R
 import kotlinx.android.synthetic.main.act_sign.*
 
@@ -29,6 +30,17 @@ class SignChangeAct : AppCompatActivity() {
         showView.setAutoPlay(true)
 
         showView.playLoop()
+
+
+        val inputStream = assets.open("111.jpg")
+//        val inputStream = assets.open("111.jpg")
+//        val inputStream = assets.open("111.jpg")
+        showLarge.setInputStream(inputStream)
+
+
+        tvHtml.text = Html.fromHtml("<font size = '20px'>simon</font>")
+        tvHtml1.text = Html.fromHtml("<font>1234<small>simon</small><big>simon</big></font>")
+
     }
 
 }

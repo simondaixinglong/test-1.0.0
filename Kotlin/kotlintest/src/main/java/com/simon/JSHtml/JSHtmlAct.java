@@ -41,6 +41,11 @@ public class JSHtmlAct extends AppCompatActivity {
         WebSettings webSettings = showWeb.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setSupportZoom(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
+        webSettings.setLoadWithOverviewMode(true);
         showWeb.setWebChromeClient(new WebChromeClient());
 
 //        showWeb.loadUrl("file:///android_asset/test.html");
@@ -61,8 +66,10 @@ public class JSHtmlAct extends AppCompatActivity {
         };
 
         showWeb.setWebViewClient(webViewClient);
-        showWeb.loadUrl("http://192.168.44.226:3001/view/settixianmima.html");
+//        showWeb.loadUrl("http://192.168.44.226:3001/view/settixianmima.html");
 //        showWeb.loadUrl("https://pdfobject.com/examples/pdfjs-forced.html");
+//        showWeb.loadUrl("http://192.168.47.210:3000/view/019/web/viewer.html");
+        showWeb.loadUrl("http://hgliangtest.oss-cn-shanghai.aliyuncs.com/product_file/690901.html");
 
     }
 
