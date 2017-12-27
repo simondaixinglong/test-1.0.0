@@ -82,4 +82,6 @@ dependencies {
     compile 'com.google.android.gms:play-services-ads:11.6.2'
     //摇一摇问题反馈
 //    compile 'com.maizijf.feedback:feedback:0.1.6'
+    //pdfView
+    compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }

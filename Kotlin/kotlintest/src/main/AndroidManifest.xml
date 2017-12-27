@@ -22,7 +22,7 @@
         <!-- <activity android:name=".refreshListview.RefreshListViewAct"> -->
         <!-- <activity android:name=".zhimaview.ZhimaAct"> -->
         <!-- <activity android:name=".kotlin.KActOne"/> -->
-        <activity android:name=".JSHtml.JSHtmlAct">
+        <!--<activity android:name=".JSHtml.JSHtmlAct">-->
         <!-- <activity android:name=".kotlin.UIAct"> -->
         <!--<activity android:name=".progressbar.ProgressAct">-->
         <!--<activity android:name=".drawview.DrawAct">-->
@@ -33,6 +33,7 @@
             <!--<activity android:name=".JSHtml.JSAct">-->
             <!--<activity android:name=".uiview.UIViewTest">-->
             <!--<activity android:name=".smalisign.SignChangeAct">-->
+            <activity android:name=".pdf.PDFAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

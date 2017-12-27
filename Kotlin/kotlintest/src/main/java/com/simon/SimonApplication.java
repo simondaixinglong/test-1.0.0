@@ -1,8 +1,9 @@
 package com.simon;
 
-import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
+
+import com.maizi.MyApplication;
 
 /**
  * Description:
@@ -11,7 +12,7 @@ import android.support.multidex.MultiDex;
  * Date:            2017/10/24 16:26
  */
 
-public class SimonApplication extends Application{
+public class SimonApplication extends MyApplication{
 
     @Override
     public void onCreate() {

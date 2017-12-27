@@ -1,12 +1,18 @@
 package com.simon;
 
+import android.Manifest;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
+    private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-
+        requestPermissions(permissions, 0);
 
 
 //        OkHttpClient okHttpClient = new OkHttpClient.Builder()
