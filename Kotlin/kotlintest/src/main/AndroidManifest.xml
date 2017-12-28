@@ -26,14 +26,14 @@
         <!-- <activity android:name=".kotlin.UIAct"> -->
         <!--<activity android:name=".progressbar.ProgressAct">-->
         <!--<activity android:name=".drawview.DrawAct">-->
-            <!--<activity android:name=".rxjava.RxjavaAct">-->
+            <activity android:name=".rxjava.RxjavaAct">
             <!--<activity android:name=".appbarlayout.AppBarLayoutAct">-->
             <!--<activity android:name=".retrofitdemo.RetrofitAct">-->
             <!--<activity android:name=".okhttp.OkHttpAct">-->
             <!--<activity android:name=".JSHtml.JSAct">-->
             <!--<activity android:name=".uiview.UIViewTest">-->
             <!--<activity android:name=".smalisign.SignChangeAct">-->
-            <activity android:name=".pdf.PDFAct">
+            <!--<activity android:name=".pdf.PDFAct">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

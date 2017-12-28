@@ -55,6 +55,9 @@ class PDFAct : AppCompatActivity(), OnPageChangeListener, OnLoadCompleteListener
                 var uri = Uri.fromFile(file)
                 displayFromUri(uri)
             }
+
+            var a = StudentA()
+            a.go()
         }
     }
 

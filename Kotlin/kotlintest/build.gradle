@@ -84,4 +84,7 @@ dependencies {
 //    compile 'com.maizijf.feedback:feedback:0.1.6'
     //pdfView
     compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //bannerview
+    compile 'com.bigkoo:convenientbanner:2.0.5'
 }

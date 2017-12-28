@@ -9,8 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
+import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.simon.R;
+import com.simon.util.ConvenientBannerUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,13 +34,37 @@ import rx.schedulers.Schedulers;
  * Date:            2017/10/9 16:05
  */
 
-public class RxjavaAct extends AppCompatActivity {
+public class RxjavaAct extends AppCompatActivity implements ConvenientBannerUtil.IImageClick {
+
+    private ConvenientBanner convenientBanner;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_rxjava);
+
+
+        convenientBanner = findViewById(R.id.convenientBanner);
+
+        List<String> imgs = new ArrayList<>();
+//        imgs.add("http://img1.imgtn.bdimg.com/it/u=3115688238,3051384815&fm=27&gp=0.jpg");
+//        imgs.add("http://img4.imgtn.bdimg.com/it/u=1811457400,1412920344&fm=27&gp=0.jpg");
+        imgs.add("http://img3.imgtn.bdimg.com/it/u=3896296464,4273750789&fm=27&gp=0.jpg");
+
+
+        ConvenientBannerUtil convenientBannerUtil = new ConvenientBannerUtil(this, convenientBanner, imgs);
+        convenientBannerUtil.setDots(new int[]{R.drawable.dotb, R.drawable.dota})
+                .setLoopTime(4000)
+                .setPageIndicatorAlign(ConvenientBanner.PageIndicatorAlign.ALIGN_PARENT_LEFT)
+                .show();
+        convenientBannerUtil.setListener(this);
     }
+
+    @Override
+    public void itemClick(int position) {
+        Toast.makeText(this, position + "", Toast.LENGTH_SHORT).show();
+    }
+
 
     /**
      * 点击显示RxJava
@@ -379,9 +406,8 @@ public class RxjavaAct extends AppCompatActivity {
      * 它和 Subscriber.onStart() 同样是在subscribe() 调用后而且在事件发送前执行，但区别在于它可以指定线程。
      * 默认情况下， doOnSubscribe() 执行在 subscribe()发生的线程；而如果在 doOnSubscribe() 之后有 subscribeOn() 的话，
      * 它将执行在离它最近的 subscribeOn() 所指定的线程。
-     *
+     * <p>
      * 如下，在 doOnSubscribe()的后面跟一个 subscribeOn() ，就能指定准备工作的线程了。
-     *
      */
     private void rxJavaDoOnSubscrible() {
 
@@ -411,6 +437,7 @@ public class RxjavaAct extends AppCompatActivity {
                 });
 
     }
+
 
 }
 

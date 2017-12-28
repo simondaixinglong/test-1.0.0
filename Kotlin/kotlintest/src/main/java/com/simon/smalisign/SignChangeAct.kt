@@ -6,6 +6,8 @@ import android.text.Html
 import com.simon.R
 import kotlinx.android.synthetic.main.act_sign.*
 
+
+
 /**
  * Description:
  * Author:          simondai
@@ -38,9 +40,17 @@ class SignChangeAct : AppCompatActivity() {
         showLarge.setInputStream(inputStream)
 
 
-        tvHtml.text = Html.fromHtml("<font size = '20px'>simon</font>")
+
         tvHtml1.text = Html.fromHtml("<font>1234<small>simon</small><big>simon</big></font>")
 
-    }
+
+
+
+
 
 }
+
+
+
+}
+
