@@ -3,12 +3,14 @@ package com.simon.drawview
 import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.TextView
 import com.simon.R
 
 class DrawAct : AppCompatActivity() {
 
 
     var doubles = doubleArrayOf(23.54, 245.54, 545.33, 245.66)
+    lateinit var textView:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
