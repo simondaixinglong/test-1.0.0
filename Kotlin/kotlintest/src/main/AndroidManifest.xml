@@ -4,10 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".SimonApplication"
@@ -26,21 +26,31 @@
         <!-- <activity android:name=".kotlin.UIAct"> -->
         <!--<activity android:name=".progressbar.ProgressAct">-->
         <!--<activity android:name=".drawview.DrawAct">-->
-            <!--<activity android:name=".rxjava.RxjavaAct">-->
-            <!--<activity android:name=".appbarlayout.AppBarLayoutAct">-->
-            <!--<activity android:name=".retrofitdemo.RetrofitAct">-->
-            <!--<activity android:name=".okhttp.OkHttpAct">-->
-            <!--<activity android:name=".JSHtml.JSAct">-->
-            <!--<activity android:name=".uiview.UIViewTest">-->
-            <!--<activity android:name=".smalisign.SignChangeAct">-->
-            <!--<activity android:name=".pdf.PDFAct">-->
-            <activity android:name=".drawview.draw.DrawAct">
+        <!--<activity android:name=".rxjava.RxjavaAct">-->
+        <!--<activity android:name=".appbarlayout.AppBarLayoutAct">-->
+        <!--<activity android:name=".retrofitdemo.RetrofitAct">-->
+        <!--<activity android:name=".okhttp.OkHttpAct">-->
+        <!--<activity android:name=".JSHtml.JSAct">-->
+        <!--<activity android:name=".uiview.UIViewTest">-->
+        <!--<activity android:name=".smalisign.SignChangeAct">-->
+        <!--<activity android:name=".pdf.PDFAct">-->
+        <activity
+            android:name=".drawview.draw.DrawAct"
+            android:taskAffinity="com.simon.drawview.draw.DrawAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".drawview.draw.TwoAct"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.simon.drawview.draw.TwoAct" />
+        <activity android:name=".drawview.draw.ThreeAct" />
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
