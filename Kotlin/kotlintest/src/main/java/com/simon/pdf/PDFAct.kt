@@ -39,7 +39,6 @@ class PDFAct : AppCompatActivity(), OnPageChangeListener, OnLoadCompleteListener
         super.onCreate(savedInstanceState)
         setContentView(R.layout.act_pdf)
 
-//        displayFromAssets("HTTP.pdf")
 
         var file = File(Constant.BASE_FILE)
         if (!file.exists()) {
