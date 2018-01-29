@@ -1,1 +1,1 @@
-include ':kotlintest', ':commonlib', ':groovy'
+include ':kotlintest', ':commonlib'
