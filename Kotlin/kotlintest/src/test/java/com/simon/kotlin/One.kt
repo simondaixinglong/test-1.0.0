@@ -24,6 +24,8 @@ class One {
         val price = """
                     ${'$'}9.99
                     """
+        println(i)
+        println(a)
 
 //        Kotlin 的类型系统旨在从我们的代码中消除 NullPointerException。NPE 的唯一可能的原因可能是
 //        显式调用 throw NullPointerException()；
